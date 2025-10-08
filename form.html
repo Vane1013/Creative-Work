@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <style>
+        .nav-active {
+            background-color: #ffeb3b;
+            font-weight: bold;
+            color: #000;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            display: block;
+        }
+        ul li a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Кладовка фанатов Реала</h1>
+    <ul>
+        <li><a href="https://www.realmadrid.com/en-US" target="_blank">Real Madrid Official Website</a></li>
+        <li><a href="https://www.realmadrid.com/en-US" target="_blank"><img src="../../Images/Real.png" height="30px"></a></li>
+        <li><a href="form.html" target="_blank" class="nav-active">Создать свою карточку в FIFA</a></li>
+        <li><a href="team.html" target="_blank">Текущий состав</a></li>
+        <li><a href="index.html#Legends" target="_self">Легенды и их рекорды</a></li>
+        <li><a href="index.html#others" target="_self">Другие рекордсмены клуба</a></li>
+        <li><a href="index.html#Real" target="_self">Вернуться в начало</a></li>
+    </ul>
+
+    <h3 align="center">Создать свою карточку в FIFA</h3>
+    <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+    <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" align="center">
+        <p>Введите данные:<input type="hidden" name="q" value="search"></p>
+        <p>Фамилия и имя: <input type="Text" name="last_name" size=20 value="Криштиану Роналду"></p>
+        <p>Возраст: <input type="Number" name="age" size=20 value="23"></p>
+        <p>Страна: <input type="Text" name="country" size=20 value="Португалия"></p>
+        <p>Клуб: <input type="Text" name="club" size=20 value="Реал Мадрид"></p>
+        <p>PAC: <input type="Number" name="PAC" size=20 value="100"></p>
+        <p>SHO: <input type="Number" name="SHO" size=20 value="100"></p>
+        <p>PAS: <input type="Number" name="PAS" size=20 value="100"></p>
+        <p>DRI: <input type="Number" name="DRI" size=20 value="100"></p>
+        <p>DEF: <input type="Number" name="DEF" size=20 value="100"></p>
+        <p>PHY: <input type="Number" name="PHY" size=20 value="100"></p>
+        <p>Позиция:
+            <input type="Radio" name="place" value="Forward">Форвард
+            <input type="Radio" name="place" value="Midfielder" checked>Полузащитник
+            <input type="Radio" name="place" value="Defender">Защитник
+            <input type="Radio" name="place" value="Goalkeeper" checked>Голкипер
+        </p>
+
+        <p>Индивидуальные трофеи:
+            <input type="Checkbox" name="trophy" value="10" checked>Золотой Мяч
+            <input type="Checkbox" name="trophy" value="20" checked>Золотая Бутса
+            <input type="Checkbox" name="trophy" value="30" checked>Лучший игрок сезона локального чемпионата
+            <input type="Checkbox" name="trophy" value="40" checked>Лучший игрок ЧМ и/или ЧЕ
+            <input type="Checkbox" name="trophy" value="50" checked>Другие трофеи
+        </p>
+
+        <p id="FIFA"> Дополнительная информация:
+            <br>
+            <TEXTAREA cols=80 rows=4 name="textarea">Другие данные об игроке</TEXTAREA>
+        </p>
+
+        <p>Дата дебюта за сборную: <input type="date" name="user_date" value='2003-08-20'></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+        <p>Цвет карточки: <input type="Техт" name="000_file_name" value="Золотой" size='30'></p>
+
+        <p> Тип игрока:<select name="010_mode">
+                <OPTION value="a">Обычный</OPTION>
+                <OPTION value="w">Кумир</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+</html>
